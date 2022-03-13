@@ -1,3 +1,4 @@
 # web_chuyen_sau
-
-MVC basic
+Source: j2teamnnl
+- MVC basic 
+- MVC CRUD
