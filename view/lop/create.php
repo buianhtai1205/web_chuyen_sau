@@ -1,7 +1,5 @@
-<h1>Thêm lớp</h1>
-
-<form action="?controller=lop&action=insert" method="post">
-    Tên lớp
+<form action="?action=store" method="post">
+    Tên
     <input type="text" name="ten">
     <button>Thêm</button>
 </form>
