@@ -57,7 +57,7 @@ class Lop
         (new Connect()) -> execute($sql);
     }
 
-    public function find($ma): Lop
+    public function find($ma)
     {
         $sql = "select * from lop where ma = '$ma' ";
         $result = (new Connect()) -> select($sql);
