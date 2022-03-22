@@ -19,7 +19,7 @@ class LopController
         $ten = $_POST['ten'];
         require_once 'model/Lop.php';
         (new Lop())->create($ten);
-        header('location:index.php');
+        header('location:index.php?controller=lop');
     }
 
     public function edit() : void
@@ -37,7 +37,7 @@ class LopController
 
         require_once 'model/Lop.php';
         (new Lop())->update($ma, $ten);
-        header('location:index.php');
+        header('location:index.php?controller=lop');
     }
 
     public function delete() : void
@@ -45,6 +45,6 @@ class LopController
         $ma = $_GET['ma'];
         require_once 'model/Lop.php';
         (new Lop())->destroy($ma);
-        header('location:index.php');
+        header('location:index.php?controller=lop');
     }
 }
