@@ -9,25 +9,31 @@ switch ($controller) {
     case 'base':
         require 'view/menu.php';
         break;
-    case 'SinhVien':
+    case 'lop':
         switch ($action) {
             case 'index':
-                (new SinhVienController())->index();
+                require_once 'controller/LopController.php';
+                (new LopController())->index();
                 break;
             case 'create':
-                (new SinhVienController())->create();
+                require_once 'controller/LopController.php';
+                (new LopController())->create();
                 break;
             case 'store':
-                (new SinhVienController())->store();
+                require_once 'controller/LopController.php';
+                (new LopController())->store();
                 break;
             case 'edit':
-                (new SinhVienController())->edit();
+                require_once 'controller/LopController.php';
+                (new LopController())->edit();
                 break;
             case 'update':
-                (new SinhVienController())->update();
+                require_once 'controller/LopController.php';
+                (new LopController())->update();
                 break;
             case 'delete':
-                (new SinhVienController())->delete();
+                require_once 'controller/LopController.php';
+                (new LopController())->delete();
                 break;
             default:
                 echo "Nhập linh ta linh tinh gì vậy!";
@@ -37,21 +43,27 @@ switch ($controller) {
     case 'sinh_vien':
         switch ($action) {
             case 'index':
+                require_once 'controller/SinhVienController.php';
                 (new SinhVienController())->index();
                 break;
             case 'create':
+                require_once 'controller/SinhVienController.php';
                 (new SinhVienController())->create();
                 break;
             case 'store':
+                require_once 'controller/SinhVienController.php';
                 (new SinhVienController())->store();
                 break;
             case 'edit':
+                require_once 'controller/SinhVienController.php';
                 (new SinhVienController())->edit();
                 break;
             case 'update':
+                require_once 'controller/SinhVienController.php';
                 (new SinhVienController())->update();
                 break;
             case 'delete':
+                require_once 'controller/SinhVienController.php';
                 (new SinhVienController())->delete();
                 break;
             default:
